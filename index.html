@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Очень хорошая игра</title>
+    <link rel="stylesheet" href="./stylesss/style.css">
+</head>
+<body>
+
+<div id="start_game">
+    <h1 id = "hi">Чтобы начать игру,<br> введите имя и нажмите на кнопку "Начать игру"</h1>
+
+    <form id="name">
+        <input type="text" required class="input" placeholder="Ваше имя">
+        <button type="submit">Начать игру</button>
+    </form>
+
+    <p id="controls">
+        Управление в игре:<br>
+        "W" - идти вверх<br>
+        "S" - идти вниз<br>
+        "A" - идти налево<br>
+        "D" - идти направо<br>
+        "Пробел" - кинуть нож<br>
+</div>
+
+<div id="seen">
+<div id="info" hidden>
+    <h2>Очки: <span id="score">0</span></h2>
+    <h2>Здоровье: <span id="life">3</span></h2>
+    <h2 id = "kill_all"></h2>
+    <h2 id = "is_kill"></h2>
+</div>
+
+<canvas id="canvas" width="640" height="475" hidden></canvas>
+</div>
+
+<div id ="records" hidden>
+    <h1>Вы прошли игру!</h1>
+    <h1>Таблица рекордов:</h1>
+</div>
+
+<script src="./managers/mapManager.js"></script>
+<script src="./managers/spriteManager.js"></script>
+<script src="./managers/eventsManager.js"></script>
+<script src="./managers/physicManager.js"></script>
+<script src="./managers/soundManager.js"></script>
+<script src="./managers/gameManager.js"></script>
+<script src="./game_objects/objects.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
